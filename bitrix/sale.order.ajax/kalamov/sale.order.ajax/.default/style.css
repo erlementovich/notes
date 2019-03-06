@@ -1,0 +1,204 @@
+.cart {
+    font-family: Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 900px;
+    margin: 0 auto;
+    font-size: .875rem;
+}
+
+/* Единичные элементы, заголовки и тп */
+.cart__title {
+    text-align: center;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.cart__info {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    /*font-size: .875rem;*/
+}
+
+.cart__label {
+    font-weight: 700;
+    margin-bottom: .5rem;
+    /*font-size: .875rem;*/
+}
+
+.cart__label__radio {
+    padding-left: 26px !important;
+    display: block !important;
+    margin: 10px 0px !important;
+}
+
+.cart__label__radio:before {
+    border: 1px solid #ef2c7c !important;
+    top: -2px !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.cart__label__radio:after {
+    background-color: #ef2c7c !important;
+    top: -2px !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+/* END Единичные элементы, заголовки и тп */
+
+/* Блоки */
+.cart__blocks {
+    padding: 1.875rem;
+    border: .0625rem solid #d0d0d0;
+    margin-bottom: -.0625rem;
+}
+
+.cart__block {
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.cart__blocks__icon {
+    position: absolute;
+    top: 5px;
+    left: -5.375rem;
+    padding: 0 .65625rem;
+    font-size: 1.1875rem;
+    line-height: 2rem;
+    border: .125rem solid #d0d0d0;
+    border-radius: 1.125rem;
+    color: #d0d0d0;
+}
+/* END Блоки */
+
+/* INPUTS */
+.body .bx-sls .bx-ui-sls-fake {
+    height: 45px !important;
+    top: 0 !important;
+}
+
+.cart__block .cart__input,
+.bx-ui-sls-fake
+{
+    display: inline-block !important;
+    padding: .8125rem .9375rem !important;
+    line-height: 1.0625rem !important;
+    border: .0625rem solid transparent !important;
+    background-color: #eeeff1 !important;
+    resize: none !important;
+    color: #333 !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    margin: 0 0 1rem 0 !important;
+    font-family: inherit !important;
+    box-shadow: none !important;
+    border-radius: .3125rem !important;
+}
+
+.cart__wrapper input::placeholder {
+    color: #a8adb7 !important;
+}
+
+.cart__block .bx-ui-sls-input-block input[name='LOCATION'],
+.cart__block .bx-ui-sls-container input:nth-child(1)
+{
+    display: none !important;
+}
+/* END INPUTS */
+
+/* Физическое лицо - инпуты */
+.type__physical .cart__input:nth-child(3),
+.type__physical .cart__input:nth-child(5),
+.type__physical .location__wrapper
+{
+    width: 54% !important;
+    display: inline-block;
+}
+
+.type__physical .cart__input:nth-child(4),
+.type__physical .cart__input:nth-child(6)
+{
+    width: 43% !important;
+    margin-left: 2% !important;
+}
+/* END Физическое лицо - инпуты */
+
+/* Юридическое лицо - инпуты */
+.type__juridical .cart__input:nth-child(7)
+{
+    width: 60% !important;
+    display: inline-block;
+}
+
+.type__juridical .location__wrapper
+{
+    display: inline-block;
+    width: 37% !important;
+    margin-left: 2% !important;
+}
+/* END Юридическое лицо - инпуты */
+
+/* LOCATION SELECT */
+.bx-ui-sls-variants .dropdown-item-text {
+    white-space: pre-wrap !important;
+}
+
+.bx-ui-sls-pane {
+    background-color: #fff !important;
+    border: 1px solid #87919c !important;
+}
+
+.dropdown-item-text {
+    color: #aba8ac !important;
+}
+
+.dropdown-item-text span {
+    color: #25282c !important;
+}
+
+.dropdown-item-text:hover {
+    background-color: #E0E8EA !important;
+}
+/* END LOCATION SELECT */
+
+/* CART FOOTER */
+.cart__footer {
+    margin-top: 1.25rem;
+}
+
+.cart__footer__agreement {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.cart__footer__button {
+    float: right;
+    margin-left: .625rem;
+    margin-bottom: 0;
+    padding: .5rem 1.5625rem;
+    font-size: .75rem;
+    line-height: 1.75rem;
+    letter-spacing: .09375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: .25rem;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .25s ease-out, color .25s ease-out;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    background-color: #ef2c7c;
+    color: #ffffff;
+}
+/* END CART FOOTER */
+
+/* HELPER */
+.cart__footer .helper {
+    display: none;
+}
+/* END HELPER */
