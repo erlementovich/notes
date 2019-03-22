@@ -15,9 +15,15 @@ $arComponentParameters = [
             'TYPE' => 'STRING',
             'MULTIPLE' => 'N'
         ],
+        'PATH_TO_REGISTRATION' => [
+            'NAME' => 'Путь к оформлению заказа',
+            'DEFAULT' => '/personal/order/make/',
+            'TYPE' => 'STRING',
+            'MULTIPLE' => 'N'
+        ],
         'PATH_TO_BASKET' => [
             'NAME' => 'Путь к корзине',
-            'DEFAULT' => '/catalog/vozdushnye_myachi_bubabloon/',
+            'DEFAULT' => '/personal/cart/',
             'TYPE' => 'STRING',
             'MULTIPLE' => 'N'
         ],
