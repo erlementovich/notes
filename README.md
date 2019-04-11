@@ -11,7 +11,6 @@
 * [Bitrix](https://github.com/kalamov/notes/wiki/6.1---Bitrix)  
 * [D7](https://github.com/kalamov/notes/wiki/6.2---D7)  
 * [Class.php](https://github.com/kalamov/notes/wiki/6.3---component)  
-* [Компоненты](https://github.com/kalamov/notes/tree/master/bitrix)  
 ## Yii2
 * [Yii2](https://github.com/kalamov/notes/wiki/7.1---Yii2)  
 * [Notes](https://github.com/kalamov/notes/wiki/7.2---Notes)  
