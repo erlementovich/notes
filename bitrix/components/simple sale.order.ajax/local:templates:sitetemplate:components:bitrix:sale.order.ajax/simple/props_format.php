@@ -8,7 +8,7 @@ if (!function_exists("PrintPropsForm"))
         $counter = 1;
 
         foreach ($arSource as $arProperties) :?>
-            <div data-property-id-row="<?= intval(intval($arProperties["ID"])) ?>">
+            <div data-property-id-row="<?= intval(intval($arProperties["ID"])) ?>" <? if ($arProperties["ID"] == 33) {?>style="display: none;"<?}?>>
                 <? if ($arProperties["TYPE"] != "LOCATION") : ?>
                     <input class="cart__input"
                            type="<?= $arProperties['TYPE'] ?>"

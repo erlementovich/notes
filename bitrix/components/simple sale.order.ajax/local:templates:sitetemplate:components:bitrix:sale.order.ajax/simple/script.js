@@ -452,27 +452,41 @@ document.addEventListener('DOMContentLoaded', function(){
 SaleOrderAjax = {
 	init: function () {
 		this.addMaskToPhoneInput();
-		// this.setRequiredAttribute();
+		// this.addListeners();
+		this.setRequiredAttribute();
 	},
 
 	addMaskToPhoneInput: function() {
 		$('input[name="ORDER_PROP_3"]').mask("+7 (999) 999-9999");
 	},
 
-	setRequiredAttribute: function () {
-		let $requiredElements = $(
-			'input[name="FIO"],' +
-			'input[name="EMAIL"],' +
-			'input[name="PHONE"],' +
-			'.bx-ui-sls-fake.form-control,' +
-			'input[name="COMPANY"],' +
-			'input[name="CONTACT_PERSON"],' +
-			'input[name="PHONE"],' +
-			'input[name="EMAIL"]'
-		);
+	// addListeners: function() {
+	// 	$('#order_form_content').bind('DOMSubtreeModified', function(e) {
+	// 		if (e.target.innerHTML.length > 0) {
+	// 			let $sdekMap = $('#SDEK_MAP');
+	//
+	// 			$('.cart__radio-group input').each(function(index, item){
+	// 				if (item.checked) {
+	// 					let $label = $('label[for="'+$(this).attr('id')+'"]');
+	//
+	// 					let labelText = $label.text();
+	//
+	// 					if (labelText.indexOf('СДЭК') > -1) {
+	// 						$sdekMap.show();
+	// 					} else {
+	// 						$sdekMap.hide();
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	})
+	// },
 
-		$requiredElements.each(function () {
-			$(this).attr('required', 'required');
+	setRequiredAttribute: function () {
+		let inputsID = [1, 2, 3, 20];
+
+		inputsID.forEach(function(item, i, arr) {
+			$('#ORDER_PROP_' + item).attr('required', 'required');
 		});
 	}
 };

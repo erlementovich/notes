@@ -252,6 +252,7 @@
                 <?
             }
             ?>
+                <div id="SDEK_MAP"></div>
             </div>
             <?
         }
